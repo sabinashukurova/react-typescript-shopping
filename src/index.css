@@ -1,13 +1,107 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+img.small {
+    max-height: 8rem;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+button {
+    padding: 0.3rem;
+    border: none;
+    background-color: #000000;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    margin: 0.2rem;
+}
+
+button.badge {
+    background-color: #f19292;
+    border: none;
+    color: #ffff;
+    width: 1.5rem;
+}
+
+button.add {
+    background-color: #3b98b9;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+button.count {
+    background: none;
+    width: 1.7rem;
+    margin-left: 0.5rem;
+    color: black;
+}
+
+button.remove {
+    background-color: #f19292;
+    width: 1.7rem;
+    border-radius: 50%;
+}
+
+.span {
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row.center {
+    align-items: center;
+}
+
+.col-1 {
+    flex-basis: 100%;
+}
+
+.col-2 {
+    flex-basis: 100%;
+}
+
+.col-3 {
+    margin-right: 2.5rem;
+}
+
+.block {
+    background-color: #dcbef7be;
+    margin: 0.5rem;
+    padding: 1rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@media screen and (min-width:800px) {
+    .col-1 {
+        flex: 1;
+    }
+    .col-2 {
+        flex: 2;
+    }
 }
